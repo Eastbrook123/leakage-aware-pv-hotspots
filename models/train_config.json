@@ -1,0 +1,32 @@
+{
+  "trained_at": "2026-11-02T23:54:00",
+  "elapsed_s": 5927,
+  "args": {
+    "model": "yolo11s.pt",
+    "data": "data/splits/sunsight_data.yaml",
+    "epochs": 60,
+    "imgsz": 960,
+    "batch": 0,
+    "workers": 4,
+    "patience": 15,
+    "fraction": 1.0,
+    "name": "sunsight_gpu_y11s960",
+    "seed": 42,
+    "resume": false,
+    "no_export": false
+  },
+  "batch_used": -1,
+  "device": "0",
+  "hardware": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "cpu": "x86_64",
+    "logical_cpus": 2,
+    "physical_cpus": 1,
+    "ram_total_gb": 13.6,
+    "ram_available_gb": 12.0,
+    "cuda": true,
+    "gpu": "Tesla T4"
+  },
+  "run_dir": "runs/sunsight_gpu_y11s960"
+}

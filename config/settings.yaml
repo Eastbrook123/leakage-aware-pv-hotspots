@@ -1,0 +1,33 @@
+# SunSight configuration. Environment variables override the values marked (env).
+
+model:
+  # (env) SUNSIGHT_MODEL_PATH overrides this path
+  path: models/sunsight_hotspot_best.pt
+  card: models/model_card.json     # written by scripts/train.py + scripts/evaluate.py
+  default_confidence: 0.25
+  iou_nms: 0.5
+  imgsz: 640
+  device: cpu
+
+priority:
+  # Review Priority Index (RPI), 0-100. Provisional, rule-based ranking for *review order*;
+  # NOT a physical fault-severity measure. Weights are configurable engineering choices,
+  # not scientifically validated values.
+  weights:
+    max_confidence: 0.40     # strongest detection in the image
+    detection_count: 0.25    # number of suspected hotspots (saturates at count_saturation)
+    thermal_contrast: 0.25   # relative raw-count contrast, only for radiometric images
+    uncertainty: 0.10        # detections close to the threshold need a human look
+  count_saturation: 4
+  contrast_z_saturation: 12.0
+  thresholds:
+    high: 60
+    medium: 30
+
+thermal:
+  contrast_ring_px: 6
+
+dataset:
+  # (env) SUNSIGHT_DATASET_DIR overrides this path
+  dir: data/raw/PV-HSD-2025
+  splits_dir: data/splits

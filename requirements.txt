@@ -1,0 +1,8 @@
+# Python 3.11 or later
+ultralytics==8.4.198
+torch==2.10.0
+torchvision==0.25.0
+opencv-python-headless==4.13.0.92
+pillow==11.3.0
+numpy==2.3.5
+PyYAML==6.0.3

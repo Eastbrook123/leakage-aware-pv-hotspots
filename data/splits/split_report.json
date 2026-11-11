@@ -1,0 +1,102 @@
+{
+  "seed": 42,
+  "cell_m": 50.0,
+  "ratios": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "excluded": [
+    "data/raw/PV-HSD-2025/train/images/62_2.JPG",
+    "data/raw/PV-HSD-2025/train/images/62_3.JPG"
+  ],
+  "n_blocks": 869,
+  "view_point_used": 4001,
+  "train": {
+    "images": 2816,
+    "boxes": 18424,
+    "images_without_hotspot": 155,
+    "blocks": 454,
+    "sessions": {
+      "check1/pack_A0": 426,
+      "check1/pack_A2": 1207,
+      "check1/pack2": 17,
+      "check1/pack5": 33,
+      "check1/pack3": 16,
+      "check1/pack6": 265,
+      "check1/pack4": 21,
+      "check1/pack_A1": 831
+    },
+    "dates": {
+      "2024-01-06": 588,
+      "2024-01-07": 143,
+      "2024-01-08": 205,
+      "2024-01-13": 196,
+      "2024-01-29": 274,
+      "2024-01-10": 555,
+      "2024-01-28": 171,
+      "2024-01-11": 662,
+      "2024-01-27": 22
+    }
+  },
+  "val": {
+    "images": 604,
+    "boxes": 3418,
+    "images_without_hotspot": 32,
+    "blocks": 208,
+    "sessions": {
+      "check1/pack_A2": 349,
+      "check1/pack_A0": 62,
+      "check1/pack2": 4,
+      "check1/pack6": 60,
+      "check1/pack3": 4,
+      "check1/pack_A1": 125
+    },
+    "dates": {
+      "2024-01-07": 64,
+      "2024-01-08": 74,
+      "2024-01-13": 89,
+      "2024-01-29": 48,
+      "2024-01-06": 86,
+      "2024-01-28": 28,
+      "2024-01-10": 115,
+      "2024-01-11": 91,
+      "2024-01-27": 9
+    }
+  },
+  "test": {
+    "images": 603,
+    "boxes": 3335,
+    "images_without_hotspot": 38,
+    "blocks": 207,
+    "sessions": {
+      "check1/pack_A0": 69,
+      "check1/pack_A2": 311,
+      "check1/pack5": 12,
+      "check1/pack6": 52,
+      "check1/pack3": 4,
+      "check1/pack4": 2,
+      "check1/pack_A1": 153
+    },
+    "dates": {
+      "2024-01-08": 92,
+      "2024-01-07": 22,
+      "2024-01-13": 85,
+      "2024-01-29": 53,
+      "2024-01-28": 43,
+      "2024-01-11": 95,
+      "2024-01-06": 118,
+      "2024-01-27": 5,
+      "2024-01-10": 90
+    }
+  },
+  "filename_groups_in_multiple_splits": 0,
+  "near_duplicates_eval_vs_train_dhash_le4": 1,
+  "test_to_nearest_train_viewpoint_m": {
+    "min": 10.427163325023402,
+    "p10": 30.28583631997916,
+    "median": 64.30276476067847
+  },
+  "hard_linked": 4023,
+  "copied": 0
+}
